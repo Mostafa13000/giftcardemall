@@ -1,10 +1,6 @@
-# Cloudflare Pages Redirects
-# Old GiftCardMall-style URLs → correct pages
 /mygift /activate.html 301
-/activate /activate.html 301
 /balance /check-balance.html 301
-/check-balance /check-balance.html 301
-/faq /faq.html 301
+/check /check-balance.html 301
 /help /faq.html 301
 /troubleshoot /troubleshooting.html 301
 /transition /giftcardmall-to-giftcards.html 301
