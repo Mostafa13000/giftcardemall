@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GiftCardeMall – Activate, Check Balance & MyGift Guide</title>
+<meta name="description" content="Complete guide to GiftCardMall MyGift activation, balance check, troubleshooting and what changed after GiftCardMall moved to Giftcards.com.">
+<meta name="keywords" content="giftcardmall mygift, activate gift card, check balance, giftcardmall not working, mygift giftcardmall.com">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://giftcardemall.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="GiftCardeMall – MyGift Activation & Balance Guide">
+<meta property="og:description" content="Step-by-step guide for GiftCardMall MyGift activation, balance check, and troubleshooting.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://giftcardemall.com/">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "GiftCardeMall",
+  "url": "https://giftcardemall.com",
+  "description": "Informational guide for GiftCardMall MyGift users",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://giftcardemall.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #00c853;
+  --green-dark: #009624;
+  --green-light: #e8f5e9;
+  --green-mid: #43a047;
+  --ink: #0d1117;
+  --ink2: #1c2333;
+  --gray: #6b7280;
+  --gray-light: #f4f6f8;
+  --white: #ffffff;
+  --gold: #ffb300;
+  --radius: 14px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.14);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fafbfc;
+  color: var(--ink);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── HEADER ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e8ecf0;
+  padding: 0 24px;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.logo-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
+.logo-text span { color: var(--green-mid); }
+
+nav { display: flex; gap: 4px; align-items: center; }
+
+nav a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+nav a:hover { background: var(--green-light); color: var(--green-dark); }
+
+.nav-cta {
+  background: var(--green) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--green-dark) !important; transform: translateY(-1px); }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, #0d1117 0%, #1a2744 50%, #0a2e1a 100%);
+  color: white;
+  padding: 90px 24px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,200,83,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(67,160,71,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,200,83,0.15);
+  border: 1px solid rgba(0,200,83,0.3);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: #6ee7a0;
+  font-weight: 500;
+  margin-bottom: 28px;
+  animation: fadeDown 0.6s ease both;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+@keyframes fadeDown { from{opacity:0;transform:translateY(-16px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(36px, 6vw, 62px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.hero h1 .accent { color: var(--green); }
+
+.hero-sub {
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-weight: 300;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green);
+  color: #0d1117;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s;
+  letter-spacing: -0.2px;
+}
+.btn-primary:hover { background: #00e676; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,200,83,0.4); }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.25s;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); }
+
+/* hero stats */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.4s ease both;
+}
+
+.hero-stat { text-align: center; }
+.hero-stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--green);
+  display: block;
+}
+.hero-stat-label { font-size: 13px; color: rgba(255,255,255,0.45); }
+
+/* ── DISCLAIMER BANNER ── */
+.disclaimer {
+  background: #fff8e1;
+  border-bottom: 2px solid #ffe082;
+  padding: 14px 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #5d4037;
+}
+.disclaimer strong { color: #e65100; }
+
+/* ── QUICK LINKS ── */
+.quick-links {
+  padding: 56px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+
+.section-sub {
+  color: var(--gray);
+  font-size: 16px;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1.5px solid #e8ecf0;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--green);
+  box-shadow: 0 12px 36px rgba(0,200,83,0.12);
+}
+
+.card-icon {
+  width: 48px; height: 48px;
+  background: var(--green-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.card h3 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+}
+
+.card p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+.card-arrow {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-mid);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── ALERT SECTION ── */
+.alert-section {
+  background: linear-gradient(135deg, #0d2b1e 0%, #1a3a2a 100%);
+  color: white;
+  padding: 64px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert-section::before {
+  content: '⚠';
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 200px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.alert-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.alert-text .badge {
+  display: inline-block;
+  background: rgba(255,179,0,0.2);
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,179,0,0.3);
+  margin-bottom: 16px;
+}
+
+.alert-text h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.alert-text p { color: rgba(255,255,255,0.65); font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+
+.alert-box {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.alert-box h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--green);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.compare-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+
+.compare-row:last-child { border-bottom: none; }
+.compare-row span:last-child { color: var(--green); font-weight: 600; }
+
+/* ── STEPS SECTION ── */
+.steps-section { padding: 72px 24px; background: var(--gray-light); }
+
+.steps-inner { max-width: 900px; margin: 0 auto; }
+
+.steps-header { text-align: center; margin-bottom: 52px; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  position: relative;
+  border: 1.5px solid #e8ecf0;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.step-num {
+  width: 44px; height: 44px;
+  background: var(--green);
+  color: #0d1117;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0 auto 16px;
+}
+
+.step-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.step-card p { font-size: 14px; color: var(--gray); }
+
+/* ── FAQ ── */
+.faq-section { padding: 72px 24px; }
+
+.faq-inner { max-width: 780px; margin: 0 auto; }
+
+.faq-header { text-align: center; margin-bottom: 48px; }
+
+.faq-item {
+  border: 1.5px solid #e8ecf0;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.faq-item:hover { border-color: var(--green); }
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 24px;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-q .arrow {
+  width: 28px; height: 28px;
+  background: var(--green-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  transition: transform 0.3s, background 0.2s;
+}
+
+.faq-item.open .faq-q .arrow {
+  transform: rotate(180deg);
+  background: var(--green);
+  color: white;
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 24px;
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.faq-item.open .faq-a {
+  max-height: 400px;
+  padding: 0 24px 20px;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.5);
+  padding: 48px 24px 32px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand .logo-text { color: white; }
+.footer-brand p { font-size: 14px; margin-top: 12px; line-height: 1.6; max-width: 300px; }
+
+.footer-col h5 {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.footer-col a {
+  display: block;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover { color: var(--green); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-disclaimer {
+  background: rgba(255,179,0,0.08);
+  border: 1px solid rgba(255,179,0,0.2);
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { display: none; }
+  .alert-inner { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding: 60px 20px 56px; }
+  .hero-stats { gap: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- DISCLAIMER BANNER -->
+<div class="disclaimer">
+  ⚠️ <strong>Independent informational site.</strong> We are NOT affiliated with GiftCardMall, Blackhawk Network, or Giftcards.com. For official support visit <a href="https://www.giftcards.com" target="_blank" rel="nofollow noopener" style="color:#e65100">giftcards.com</a>.
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-icon">🎁</div>
+      <span class="logo-text">GiftCard<span>eMall</span></span>
+    </a>
+    <nav>
+      <a href="/activate.html">Activate</a>
+      <a href="/check-balance.html">Check Balance</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/troubleshooting.html">Troubleshooting</a>
+      <a href="/activate.html" class="nav-cta">Get Started →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Updated April 2026 — GiftCardMall is now Giftcards.com</div>
+    <h1>Your Complete<br><span class="accent">GiftCardMall MyGift</span><br>Guide</h1>
+    <p class="hero-sub">Activate your card, check your balance, and understand everything about the GiftCardMall → Giftcards.com transition — in plain English.</p>
+    <div class="hero-actions">
+      <a href="/activate.html" class="btn-primary">🚀 Activate My Card</a>
+      <a href="/check-balance.html" class="btn-secondary">💳 Check Balance</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">4</span>
+        <span class="hero-stat-label">Steps to activate</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">2 min</span>
+        <span class="hero-stat-label">Average time</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Free</span>
+        <span class="hero-stat-label">Always free guide</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+  <p class="section-label">What do you need?</p>
+  <h2 class="section-title">Everything in one place</h2>
+  <p class="section-sub">Pick what you need and get step-by-step instructions instantly.</p>
+  <div class="cards-grid">
+    <a href="/activate.html" class="card">
+      <div class="card-icon">✅</div>
+      <h3>Activate Your Card</h3>
+      <p>New card? Follow our 4-step activation guide for Visa and Mastercard MyGift cards.</p>
+      <span class="card-arrow">Start activating →</span>
+    </a>
+    <a href="/check-balance.html" class="card">
+      <div class="card-icon">💰</div>
+      <h3>Check Your Balance</h3>
+      <p>See how much is left on your GiftCardMall MyGift card — multiple ways to check.</p>
+      <span class="card-arrow">Check now →</span>
+    </a>
+    <a href="/giftcardmall-to-giftcards.html" class="card">
+      <div class="card-icon">🔄</div>
+      <h3>GiftCardMall → Giftcards.com</h3>
+      <p>Everything changed in 2025. Here's what it means for your existing cards and purchases.</p>
+      <span class="card-arrow">Read the update →</span>
+    </a>
+    <a href="/troubleshooting.html" class="card">
+      <div class="card-icon">🔧</div>
+      <h3>Troubleshooting</h3>
+      <p>Card declined? Site not loading? Common problems and their fixes, explained clearly.</p>
+      <span class="card-arrow">Fix my issue →</span>
+    </a>
+    <a href="/faq.html" class="card">
+      <div class="card-icon">❓</div>
+      <h3>FAQ</h3>
+      <p>Answers to the most common questions about MyGift cards, fees, expiry, and more.</p>
+      <span class="card-arrow">See all FAQs →</span>
+    </a>
+    <a href="/register-card.html" class="card">
+      <div class="card-icon">🛡️</div>
+      <h3>Register Your Card</h3>
+      <p>Why you should register your card and how to protect it against loss or theft.</p>
+      <span class="card-arrow">Learn why →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ALERT SECTION -->
+<section class="alert-section">
+  <div class="alert-inner">
+    <div class="alert-text">
+      <div class="badge">🔔 Important Update 2025</div>
+      <h2>GiftCardMall is now officially Giftcards.com</h2>
+      <p>In 2025, Blackhawk Network officially rebranded GiftCardMall.com and merged it into Giftcards.com. Your existing cards still work — but activation and balance check URLs have changed.</p>
+      <p>Many users are confused and searching for the old site. This guide tells you exactly where to go now.</p>
+      <a href="/giftcardmall-to-giftcards.html" class="btn-primary" style="margin-top:8px;display:inline-flex">Read full transition guide →</a>
+    </div>
+    <div class="alert-box">
+      <h4>What changed?</h4>
+      <div class="compare-row"><span>Old activation URL</span><span>New URL ✓</span></div>
+      <div class="compare-row"><span>giftcardmall.com/mygift</span><span>giftcards.com</span></div>
+      <div class="compare-row"><span>Old customer service</span><span>Same phone ✓</span></div>
+      <div class="compare-row"><span>Your card balance</span><span>Still active ✓</span></div>
+      <div class="compare-row"><span>Old purchases</span><span>Fully supported ✓</span></div>
+      <div class="compare-row"><span>New purchases</span><span>Giftcards.com ✓</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps-section">
+  <div class="steps-inner">
+    <div class="steps-header">
+      <p class="section-label">Quick guide</p>
+      <h2 class="section-title">Activate your card in 4 steps</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Takes about 2 minutes. Have your card ready.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Find your card details</h4>
+        <p>Locate the 16-digit card number, expiry date, and CVV on the back of your card.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Visit the official site</h4>
+        <p>Go to <strong>giftcards.com</strong> (the new official home for all GiftCardMall cards).</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Enter your card info</h4>
+        <p>Type in your card number, expiry, and security code to verify your card.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>Register (recommended)</h4>
+        <p>Create an account to protect your card against loss or theft. Takes 60 seconds.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="/activate.html" class="btn-primary">Full activation guide with screenshots →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <p class="section-label">Common questions</p>
+      <h2 class="section-title">FAQ</h2>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is giftcardmall.com still working in 2025?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">GiftCardMall.com officially merged with Giftcards.com in 2025 as part of Blackhawk Network's rebrand. The old domain now redirects, but your existing cards remain fully valid and supported. For activation, balance checks, and support, use giftcards.com directly.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How do I check my GiftCardMall MyGift balance?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">You can check your balance in 3 ways: (1) Visit giftcards.com and log into your account, (2) Call the number on the back of your card (available 24/7), or (3) Check at checkout — most retailers display your remaining balance after a partial payment. See our full <a href="/check-balance.html" style="color:var(--green-mid)">balance check guide</a> for screenshots.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        My MyGift card was declined — what do I do?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">A declined card is usually one of four things: insufficient balance, card not yet activated, the merchant requires a billing address (use the ZIP where the card was purchased), or an authorization hold from a gas station or hotel. Check your balance first, then see our full <a href="/troubleshooting.html" style="color:var(--green-mid)">troubleshooting guide</a>.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Do GiftCardMall cards expire?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">The funds on your card do not expire, but the physical card itself has an expiration date printed on the front. If your card expires while you still have a balance, contact customer service — they can reissue a new card with the remaining balance transferred. Monthly inactivity fees may apply after 12 months of no use.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Can I use my MyGift card online?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">Yes. For online purchases, most merchants require a billing address. Use the ZIP code of the address associated with the card. If you haven't registered your card, you may need to do so first — some online merchants verify the billing address against the card issuer's records.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What is the customer service number for GiftCardMall?
+        <span class="arrow">▾</span>
+      </button>
+      <div class="faq-a">The customer service number for cards previously sold through GiftCardMall is 1-833-800-0550, available 24/7. This is run by Blackhawk Network. For lost or stolen cards, call immediately — they can freeze the card and transfer remaining balance to a new card if the card was registered.</div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="/faq.html" class="btn-secondary" style="background:var(--green-light);color:var(--green-dark);border:none;display:inline-flex">View all FAQs →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-disclaimer">
+      ⚠️ <strong style="color:rgba(255,255,255,0.7)">Disclaimer:</strong> GiftCardeMall.com is an independent informational website. We are not affiliated with, endorsed by, or connected to GiftCardMall, Blackhawk Network, Giftcards.com, or any related entities. All trademarks belong to their respective owners. For official support, please visit <a href="https://www.giftcards.com" target="_blank" rel="nofollow noopener" style="color:var(--green)">giftcards.com</a> or call 1-833-800-0550.
+    </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🎁</div>
+          <span class="logo-text" style="color:white">GiftCard<span>eMall</span></span>
+        </div>
+        <p>An independent guide helping users navigate GiftCardMall MyGift activation, balance checks, and the Giftcards.com transition.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Guides</h5>
+        <a href="/activate.html">Activate Card</a>
+        <a href="/check-balance.html">Check Balance</a>
+        <a href="/register-card.html">Register Card</a>
+        <a href="/giftcardmall-to-giftcards.html">GiftCardMall → Giftcards.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Help</h5>
+        <a href="/troubleshooting.html">Troubleshooting</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GiftCardeMall.com — Independent informational site</span>
+      <span>Not affiliated with Blackhawk Network or Giftcards.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Intersection Observer for scroll animations
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.card, .step-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s';
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
