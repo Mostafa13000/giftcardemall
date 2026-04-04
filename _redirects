@@ -1,7 +1,5 @@
+# Cloudflare Pages Redirects
 /mygift /activate.html 301
-/balance /check-balance.html 301
-/check /check-balance.html 301
 /help /faq.html 301
 /troubleshoot /troubleshooting.html 301
-/transition /giftcardmall-to-giftcards.html 301
 /news /giftcardmall-to-giftcards.html 301
