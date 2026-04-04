@@ -2,7 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://giftcardemall.com/sitemap.xml
-
-# Block admin or private paths if any
-Disallow: /admin/
-Disallow: /private/
