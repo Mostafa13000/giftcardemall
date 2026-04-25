@@ -1,5 +1,15 @@
-# Cloudflare Pages Redirects
-/mygift /activate.html 301
-/help /faq.html 301
-/troubleshoot /troubleshooting.html 301
-/news /giftcardmall-to-giftcards.html 301
+# Cloudflare Pages - Redirect .html to clean URLs
+/index.html / 301
+/faq.html /faq 301
+/activate.html /activate 301
+/check-balance.html /check-balance 301
+/troubleshooting.html /troubleshooting 301
+/giftcardmall-to-giftcards.html /giftcardmall-to-giftcards 301
+/inactivity-fees.html /inactivity-fees 301
+/use-card-online.html /use-card-online 301
+
+# Alias Redirects
+/mygift /activate 301
+/help /faq 301
+/troubleshoot /troubleshooting 301
+/news /giftcardmall-to-giftcards 301
